@@ -1,0 +1,274 @@
+@media (max-width: 1300px) {
+  header {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .mobile-header-container {
+    background-color: white;
+    position: relative;
+    display: block;
+  }
+  .content-card-container {
+    position: relative;
+    z-index: 10;
+    margin-left: 0;
+  }
+  .content-card-container h1 {
+    font-size: 5rem;
+    line-height: 48px;
+  }
+  .content-card-container-flexbox-right h2 {
+    font-size: 3.6rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 996px) {
+  .content-section {
+    width: 100%;
+    min-height: 150vh;
+    height: 150vh;
+    position: relative;
+  }
+  .content-card-container-flexbox {
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 12px;
+    grid-column-gap: 15px;
+  }
+
+  .content-card-container-flexbox-left {
+    grid-column: 1 / span 1;
+  }
+  .content-card-container-flexbox-left img {
+    width: 55%;
+    aspect-ratio: 3/4;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  .content-card-container-flexbox-middle {
+    grid-column: 2 / span 1;
+    height: 100%;
+    margin: auto 0;
+  }
+  .content-card-container-flexbox-middle img {
+    width: 85%;
+  }
+  .content-card-container-flexbox-right {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  }
+  .content-card-container-flexbox-right div {
+    height: 70%;
+    margin: 0 20px;
+  }
+
+  /* -------Forme Du Moment page------- */
+  .content-card-container-flexbox-forme {
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+  .content-card-container-flexbox-forme-left {
+    grid-row: 1;
+    grid-column: 1;
+    border-bottom-left-radius: 0;
+  }
+  .content-card-container-flexbox-forme-left img {
+    width: 55%;
+    aspect-ratio: 3/4;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  .content-card-container-flexbox-forme-middle {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+  }
+  .content-card-container-flexbox-forme-right {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .forme-chart {
+    width: 50%;
+  }
+
+  .content-card-container-flexbox-forme-right table tr th {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+  .content-card-container-flexbox-forme-right table tr td {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 5px;
+  }
+  .forme-content-card-switch-buttons {
+    top: -31px;
+  }
+  .forme-content-card-switch-buttons div {
+    padding: 4px 15px;
+    margin-left: 15px;
+  }
+  .forme-content-card-switch-buttons div span {
+    margin-right: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 786px) {
+  .content-section {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 30px;
+    background-color: var(--third-color);
+  }
+  .content-section::before {
+    content: none;
+  }
+
+  .content-section::after {
+    content: none;
+  }
+  .mobile-header-search-bar {
+    display: none;
+  }
+  .mobile-header-hamburger-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--primay-color);
+    z-index: 20;
+    transform: translateY(-200%);
+    border-bottom: 2px solid var(--third-color);
+    transition: all 0.6s ease-in;
+  }
+
+  .mobile-header-hamburger-menu-2 {
+    transition: all 0.6s ease-in;
+    transform: translateY(0);
+  }
+  .mobile-header-hamburger-menu nav.mobile-header-nav {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .mobile-header-hamburger-menu nav.mobile-header-nav a {
+    padding: 5px;
+  }
+  .content-card-container h1 {
+    font-size: 3.2rem;
+    line-height: 30px;
+  }
+  .content-card-container-flexbox-right h2 {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-card-container-flexbox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 12px;
+    grid-column-gap: 0;
+  }
+
+  .content-card-container-flexbox-left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+  }
+  .content-card-container-flexbox-left img {
+    width: 40%;
+    aspect-ratio: 3/5;
+    margin: 0 auto;
+  }
+  .content-card-container-flexbox-middle {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .content-card-container-flexbox-middle img {
+    width: 60%;
+    margin: 10px auto;
+  }
+  .content-card-container-flexbox-right {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    height: 300px;
+  }
+  .content-card-container-flexbox-right p {
+    color: var(--grey-color);
+    padding: 13px 13px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  /* -------Forme Du Moment page------- */
+  .content-card-container-flexbox-forme {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+  }
+  .content-card-container-flexbox-forme-left {
+    grid-row: 1;
+    grid-column: 1;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+  }
+  .content-card-container-flexbox-forme-left img {
+    width: 40%;
+    aspect-ratio: 3/5;
+    margin: 0 auto;
+  }
+  .content-card-container-flexbox-forme-middle {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .content-card-container-flexbox-forme-right {
+    grid-row: 3;
+    grid-column: 1;
+    padding: 15px 10px 15px 25px;
+  }
+  .forme-chart {
+    width: 100%;
+  }
+  .forme-content-card-switch-buttons {
+    right: 50%;
+    transform: translateX(50%);
+    top: -20px;
+  }
+  .forme-content-card-switch-buttons div {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: none;
+    width: 45px;
+    margin-left: 10px;
+  }
+  .forme-content-card-switch-buttons div span {
+    display: none;
+  }
+  .forme-content-card-switch-buttons div img {
+    width: 100%;
+  }
+}

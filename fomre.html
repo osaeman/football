@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Football</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> -->
+  </head>
+
+  <body>
+    <!-- Mobile Header -->
+    <div class="mobile-header-container">
+      <div class="mobile-header-flexbox">
+        <div class="mobile-header-site-logo">
+          <img src="./images/site logo.png" alt="" />
+        </div>
+        <div class="header-search-bar mobile-header-search-bar">
+          <input type="text" placeholder="Search" />
+          <span> <i class="fas fa-search"></i></span>
+        </div>
+        <div class="mobile-header-login header-user">
+          <a href="">
+            <i class="far fa-user"></i>
+          </a>
+        </div>
+        <div class="mobile-header-hamburger-button">
+          <i class="far fa-bars"></i>
+        </div>
+      </div>
+      <div class="mobile-header-hamburger-menu">
+        <nav class="mobile-header-nav">
+          <a href="">Equipes</a><a href="">Fichier</a><a href="">outils</a
+          ><a href="">Favoris</a><a href="">Historique</a>
+          <a href="">Espace Player</a>
+        </nav>
+        <nav class="mobile-header-social-media">
+          <a href=""> <i class="fab fa-facebook-f"></i></a>
+          <a href=""> <i class="fab fa-linkedin-in"></i></a>
+          <a href=""> <i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </nav>
+      </div>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div>
+          <nav>
+            <a href="">Equipes</a><a href="">Fichier</a><a href="">outils</a
+            ><a href="">Favoris</a><a href="">Historique</a>
+            <a href="">Espace Player</a>
+          </nav>
+        </div>
+        <div class="header-search-bar">
+          <input type="text" placeholder="Search" />
+          <span> <i class="fas fa-search"></i></span>
+        </div>
+        <div class="header-user">
+          <a href="">
+            <i class="far fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <div class="site-logo">
+        <a href=""><img src="./images/site logo.png" alt="" /></a>
+      </div>
+      <div class="social-media-links">
+        <a href=""> <i class="fab fa-facebook-f"></i></a>
+        <a href=""> <i class="fab fa-linkedin-in"></i></a>
+        <a href=""> <i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="setting">
+        <a href=""> <i class="far fa-cog"></i></a>
+      </div>
+    </section>
+    <!-- Side Button -->
+    <div class="side-button">
+      <a href="">
+        <img src="./images/play.png" alt="" />
+      </a>
+    </div>
+
+    <main>
+      <!-- Content Section -->
+      <section class="content-section">
+        <div class="background-image-overlay">
+          <img src="./images/irfan afsar2.png" alt="" />
+        </div>
+
+        <div class="content-card-container content-card-container-forme">
+          <div class="time">
+            <div>
+              <i class="fas fa-calendar-alt"></i> <span>23.12.2023</span>
+            </div>
+            <div>
+              <i class="fas fa-clock"></i>
+              <span>06.10.57</span>
+            </div>
+          </div>
+          <h1>Forme Du Moment</h1>
+          <div class="content-card-container-flexbox-forme">
+            <div class="forme-content-card-switch-buttons">
+              <div>
+                <span>vs</span>
+                <img src="./images/logo-team-3.png" alt="" />
+              </div>
+              <div>
+                <span>vs</span>
+                <img src="./images/team-logo1.png" alt="" />
+              </div>
+
+              <div class="forme-content-card-switch-button-active">
+                <span>vs</span>
+                <img src="./images/team-logo-4.png" alt="" />
+              </div>
+
+              <div>
+                <span>vs</span>
+                <img src="./images/team-logo-2.png" alt="" />
+              </div>
+              <div>
+                <span>vs</span>
+                <img src="./images/team-logo-3.png" alt="" />
+              </div>
+            </div>
+            <div class="content-card-container-flexbox-forme-left">
+              <img src="./images/player.png" alt="" />
+            </div>
+            <div class="content-card-container-flexbox-forme-middle">
+              <i class="far fa-chevron-double-left"></i>
+              <div class="forme-chart">
+                <canvas id="myChart"></canvas>
+              </div>
+              <h3>
+                description <a href=""><i class="far fa-edit"></i></a>
+              </h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div class="content-card-container-flexbox-forme-right">
+              <table>
+                <tr>
+                  <th>180</th>
+                  <td>Passes Tentes</td>
+                </tr>
+                <tr>
+                  <th>105</th>
+                  <td>Passes Reussis</td>
+                </tr>
+                <tr>
+                  <th>60</th>
+                  <td>duels</td>
+                </tr>
+                <tr>
+                  <th>45</th>
+                  <td>duels gagnes</td>
+                </tr>
+
+                <tr>
+                  <th>45</th>
+                  <td>Dribles Tentes</td>
+                </tr>
+
+                <tr>
+                  <th>45</th>
+                  <td>Dribles reussis</td>
+                </tr>
+
+                <tr>
+                  <th>45</th>
+                  <td>passes decisives</td>
+                </tr>
+
+                <tr>
+                  <th>45</th>
+                  <td>passes vers l'avant</td>
+                </tr>
+
+                <tr>
+                  <th>44</th>
+                  <td>Cf tires</td>
+                </tr>
+
+                <tr>
+                  <th>78</th>
+                  <td>cf reussis</td>
+                </tr>
+
+                <tr>
+                  <th>88</th>
+                  <td>fautes</td>
+                </tr>
+                <tr>
+                  <th>99</th>
+                  <td>centres</td>
+                </tr>
+                <tr>
+                  <th>99</th>
+                  <td>centres reussis</td>
+                </tr>
+                <tr>
+                  <th>99</th>
+                  <td>Horse jeu</td>
+                </tr>
+                <tr>
+                  <th>99</th>
+                  <td>Ballons Perdus</td>
+                </tr>
+              </table>
+            </div>
+
+            <i class="far fa-chevron-double-right"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Duels", "Du/Gagnes", "P/Reussies", "P/decisive", "fautes"],
+          datasets: [
+            {
+              data: [57, 42, 80, 25, 12],
+              backgroundColor: "#fedc00", // Set the color to yellow
+              borderWidth: 0,
+              barPercentage: 0.5, // Set the bar width to 60% of available space
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              grid: {
+                display: false,
+              },
+              border: {
+                display: false,
+              },
+              ticks: {
+                color: "#01a558",
+                font: {
+                  size: 13,
+                  weight: "bold",
+                },
+              },
+            },
+            y: {
+              beginAtZero: true,
+              display: false, // Hide the Y-axis
+            },
+          },
+          plugins: {
+            legend: {
+              display: false, // Hide the legend if you have one
+            },
+          },
+        },
+      });
+    </script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
