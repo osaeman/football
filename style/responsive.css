@@ -122,6 +122,7 @@
   .forme-content-card-switch-buttons {
     top: -31px;
   }
+
   .forme-content-card-switch-buttons div {
     padding: 4px 15px;
     margin-left: 15px;
@@ -133,6 +134,9 @@
   }
 }
 @media (max-width: 786px) {
+  .mobile-header-hamburger-button i {
+    display: block;
+  }
   .content-section {
     width: 100%;
     height: max-content;
