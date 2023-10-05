@@ -1,15 +1,99 @@
-@media (max-width: 1300px) {
-  header {
-    display: none;
+@media (min-width: 1800px) {
+  .content-section {
+    min-height: 110vh;
+    height: 110vh;
   }
+  .content-card-container-flexbox-library-video {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1300px) {
+  .header-container {
+    padding: 15px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .header-site-logo {
+    display: block;
+    order: 1;
+    width: 48%;
+  }
+  .header-site-logo img {
+    width: 35px;
+  }
+  .header-social-media {
+    display: flex;
+    order: 4;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0 5px 0;
+  }
+  .header-social-media div {
+    border-top: 2px solid var(--seconday-color);
+    padding-top: 10px;
+  }
+  .header-social-media a {
+    padding: 0 10px;
+    color: var(--seconday-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  .header-social-media a:hover {
+    color: var(--third-color);
+  }
+  .header-nav {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-container span .nav-links {
+    padding: 10px 20px;
+    color: var(--seconday-color);
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+  }
+  .nav-sub-menu-link-style-2:hover .nav-links {
+    color: var(--fourth-color);
+  }
+  .nav-sub-menu-dropdown-show {
+    transition: all 0.3s ease-out;
+    transform: scaleY(1);
+    overflow: visible;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .nav-sub-menu-link:hover {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .nav-sub-menu-dropdown .header-sub-menu {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .nav-sub-menu-dropdown .header-sub-menu .hover-dropdown:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .header-user {
+    order: 2;
+    width: 40px;
+  }
+  .header-search-bar {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .sidebar {
     display: none;
   }
-  .mobile-header-container {
-    background-color: white;
-    position: relative;
-    display: block;
-  }
+
   .content-card-container {
     position: relative;
     z-index: 10;
@@ -132,11 +216,58 @@
     font-size: 1.7rem;
     font-weight: 500;
   }
-}
-@media (max-width: 786px) {
-  .mobile-header-hamburger-button i {
+  /* Videos Joueurs */
+  .content-card-container-flexbox-library-video {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content-card-container-flexbox-library-video-left {
+    grid-column: 1;
+  }
+  .content-card-container-flexbox-library-video-left-switches {
+    justify-content: flex-start;
+  }
+
+  .content-card-container-flexbox-library-video-right {
+    grid-column: 1;
+  }
+  .content-card-container-flexbox-library-video-left-switches ul li {
+    margin: 25px 0;
+  }
+  .content-card-container-flexbox-joueurs {
+    height: 500px;
+  }
+  /* Adversaire Page */
+  .content-card-container-flexbox-adversaire {
+    height: 500px;
+  }
+  /* Videos Match Page */
+  .content-card-container-flexbox-matches {
+    height: 500px;
+  }
+  /* Videos Entertainment Page */
+
+  .a {
+    height: 500px;
+  }
+  .entertainment-switch-buttons {
     display: block;
   }
+  .content-card-container-flexbox-entertainment-right {
+    display: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+  .content-card-container-flexbox-entertainment-left {
+    border: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+  .entertainment-card {
+    width: 100% !important;
+  }
+}
+@media (max-width: 786px) {
   .content-section {
     width: 100%;
     height: max-content;
@@ -150,30 +281,45 @@
   .content-section::after {
     content: none;
   }
+  header {
+    display: none;
+  }
+  .mobile-header-container {
+    display: block;
+  }
+  .mobile-header-hamburger-button i {
+    display: inline-block;
+  }
   .mobile-header-search-bar {
     display: none;
   }
   .mobile-header-hamburger-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     left: 0;
+    max-width: 300px;
+    width: 250px;
     background-color: var(--primay-color);
     z-index: 20;
-    transform: translateY(-200%);
-    border-bottom: 2px solid var(--third-color);
+    transform: translateX(-200%);
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease-in;
   }
 
   .mobile-header-hamburger-menu-2 {
     transition: all 0.6s ease-in;
     transform: translateY(0);
   }
-  .mobile-header-hamburger-menu nav.mobile-header-nav {
-    flex-direction: column;
-    padding: 15px 0;
+
+  .header-user {
+    border: 2px solid var(--seconday-color);
+    width: 35px;
+    height: 35px;
+    padding-top: 4px;
   }
-  .mobile-header-hamburger-menu nav.mobile-header-nav a {
-    padding: 5px;
+  .header-user i {
+    font-size: 2.1rem;
   }
   .content-card-container h1 {
     font-size: 3.2rem;
@@ -182,6 +328,66 @@
   .content-card-container-flexbox-right h2 {
     font-size: 3rem;
     line-height: 40px;
+  }
+  /* Videos Match Page */
+  .content-card-container-flexbox-matches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adversaire Page */
+  .content-card-container-flexbox-adversaire {
+    height: 500px;
+  }
+  .adversaire-card {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .adversaire-card-left {
+    justify-content: center;
+    width: 100%;
+  }
+  .adversaire-card-right {
+    justify-content: center;
+    width: 100%;
+  }
+  .adversaire-card-left img,
+  .adversaire-card-right img {
+    width: 50px;
+    max-width: 50px;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+  }
+  .adversaire-card-middle {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  .adversaire-card-middle b {
+    margin: 0 0 0 0;
+    order: 3;
+    font-size: 1.6rem;
+  }
+  .v-s span:first-child,
+  .v-s span:last-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 23px;
+    height: 23px;
+    padding: 2px 0;
+  }
+
+  .adversaire-card-absolute img {
+    width: 30px;
+  }
+  /* Joueurs Page */
+  .joueurs-players-flexbox {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
   }
 }
 
@@ -273,5 +479,25 @@
   }
   .forme-content-card-switch-buttons div img {
     width: 100%;
+  }
+
+  /* Videos Match Page */
+  .content-card-container-flexbox-matches {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .library-menu-select {
+    margin-right: -5px !important;
+  }
+  .content-card-container-flexbox-library-video-left-switches ul li span {
+    font-size: 1.5rem;
+  }
+  .entertainment-card {
+    flex-direction: column;
+  }
+  .entertainment-card iframe {
+    width: 100% !important;
+  }
+  .entertainment-switch-buttons span {
+    font-size: 1.6rem;
   }
 }

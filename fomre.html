@@ -37,10 +37,10 @@
             <img src="./images/site logo.png" alt=""
           /></a>
         </div>
-        <div class="header-search-bar mobile-header-search-bar">
+        <!-- <div class="header-search-bar mobile-header-search-bar">
           <input type="text" placeholder="Search" />
           <span> <i class="fas fa-search"></i></span>
-        </div>
+        </div> -->
         <div class="mobile-header-login header-user">
           <a href="">
             <i class="far fa-user"></i>
@@ -51,23 +51,131 @@
         </div>
       </div>
       <div class="mobile-header-hamburger-menu">
-        <nav class="mobile-header-nav">
-          <a href="">Equipes</a><a href="">Fichier</a><a href="">outils</a
-          ><a href="">Favoris</a><a href="">Historique</a>
-          <a href="./fomre.html">Espace Player</a>
-        </nav>
-        <nav class="mobile-header-social-media">
-          <a href=""> <i class="fab fa-facebook-f"></i></a>
-          <a href=""> <i class="fab fa-linkedin-in"></i></a>
-          <a href=""> <i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-        </nav>
+        <div class="close-mob-menu-btn"><i class="fal fa-times"></i></div>
+
+        <div class="mobile-header-hamburger-menu-container">
+          <nav class="mobile-header-nav">
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Equipes
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">
+                    <b>Equipe Pro</b>
+                  </a>
+                  <a>
+                    <span class="mob-nav-sub-sub-menu-link">
+                      U21
+                      <p><i class="fas fa-caret-down"></i></p>
+                    </span>
+
+                    <div class="mob-nav-sub-sub-menu-dropdown">
+                      <nav>
+                        <a href="">Effectif</a>
+                        <a href="">Library</a>
+                        <a href="">learning</a>
+                        <a href="">Archieve</a>
+                      </nav>
+                    </div>
+                  </a>
+                  <a href=""> U19</a>
+                  <a href=""> U18</a>
+                  <a href=""> <b>Equipe Pro F</b></a>
+                  <a href="">U21</a>
+                  <a href=""> U19</a>
+                  <a href=""> U18</a>
+                  <a href=""> <b>Academie</b></a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Fichier
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Enregistrer</a>
+                  <a href="">Exporter</a>
+                  <a href="">Importer</a>
+                  <a href="">Impression</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Outils
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Noter</a>
+                  <a href="">E-learning</a>
+                  <a href="">Preparation Line</a>
+                  <a href="">Montage Vide</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Favoris
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Videos Joueurs equipes pro</a>
+                  <a href="">Effectif equipe pro</a>
+                  <a href="">Archive Adversaire</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Historique
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Fiche detailee Alban Lafont</a>
+                  <a href="">Video entrainemnet seance de tris 15/05/2022</a>
+                  <a href="">Video entrainemnet defense de tris 15/05/2022</a>
+                  <a href=""
+                    >Video entrainemnet PSG vs NANTES de tris 10/05/2022</a
+                  >
+                  <a href=""
+                    >Video entrainemnet coup de pieds arretes PSG vs NANTES
+                    10/05/2022</a
+                  >
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link" href="./fomre.html"
+                >Espace Player
+              </a>
+            </span>
+          </nav>
+          <nav class="mobile-header-social-media">
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+            <a href=""> <i class="fab fa-linkedin-in"></i></a>
+            <a href=""> <i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </nav>
+        </div>
       </div>
     </div>
+
     <!-- Header -->
     <header>
       <div class="header-container">
-        <div>
+        <div class="header-site-logo">
+          <a href="./index.html">
+            <img src="./images/site logo.png" alt=""
+          /></a>
+        </div>
+        <div class="header-nav">
           <nav class="header-menu">
             <span class="nav-sub-menu-link">
               <a class="nav-links">Equipes </a>
@@ -152,18 +260,144 @@
               </div>
             </span>
 
-            <span>
-              <a class="nav-links" href="">Fichier</a>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Fichier</a>
+              <!--  -->
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a class="nav-sub-links">
+                      <p>
+                        <b>Enregistrer</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Exporter</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Importer</b></p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Impression</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <!--  -->
             </span>
 
-            <span>
-              <a class="nav-links" href="">outils</a>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">outils</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Noter</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>E-learning</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Preparation Line</b></p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Montage vide</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
             </span>
-            <span>
-              <a class="nav-links" href="">Favoris</a>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Favoris</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Videos Joueurs equipes pro</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Effectif equipe pro</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Archive Adversaire</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
             </span>
-            <span>
-              <a class="nav-links" href="">Historique</a>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Historique</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Fiche detailee Alban Lafont</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Video entrainemnet seance de tris 15/05/2022</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Video entrainemnet defense de tris 15/05/2022</b>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b
+                          >Video entrainemnet PSG vs NANTES de tris
+                          10/05/2022</b
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b
+                          >Video entrainemnet coup de pieds arretes PSG vs
+                          NANTES 10/05/2022</b
+                        >
+                      </p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
             </span>
             <span>
               <a class="nav-links" href="./fomre.html">Espace Player</a>
@@ -178,6 +412,14 @@
           <a href="">
             <i class="far fa-user"></i>
           </a>
+        </div>
+        <div class="header-social-media">
+          <div>
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+            <a href=""> <i class="fab fa-linkedin-in"></i></a>
+            <a href=""> <i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
     </header>
@@ -247,7 +489,7 @@
               </div>
             </div>
             <div class="content-card-container-flexbox-forme-left">
-              <img src="./images/player.png" alt="" />
+              <img src="./images/player-4.png" alt="" />
             </div>
             <div class="content-card-container-flexbox-forme-middle">
               <i class="far fa-chevron-double-left"></i>

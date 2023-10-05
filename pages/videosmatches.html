@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Videos Matches | Library</title>
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Mobile Header -->
+    <div class="mobile-header-container">
+      <div class="mobile-header-flexbox">
+        <div class="mobile-header-site-logo">
+          <a href="./index.html">
+            <img src="./images/site logo.png" alt=""
+          /></a>
+        </div>
+        <!-- <div class="header-search-bar mobile-header-search-bar">
+          <input type="text" placeholder="Search" />
+          <span> <i class="fas fa-search"></i></span>
+        </div> -->
+        <div class="mobile-header-login header-user">
+          <a href="">
+            <i class="far fa-user"></i>
+          </a>
+        </div>
+        <div class="mobile-header-hamburger-button">
+          <i class="far fa-bars"></i>
+        </div>
+      </div>
+      <div class="mobile-header-hamburger-menu">
+        <div class="close-mob-menu-btn"><i class="fal fa-times"></i></div>
+
+        <div class="mobile-header-hamburger-menu-container">
+          <nav class="mobile-header-nav">
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Equipes
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">
+                    <b>Equipe Pro</b>
+                  </a>
+                  <a>
+                    <span class="mob-nav-sub-sub-menu-link">
+                      U21
+                      <p><i class="fas fa-caret-down"></i></p>
+                    </span>
+
+                    <div class="mob-nav-sub-sub-menu-dropdown">
+                      <nav>
+                        <a href="">Effectif</a>
+                        <a href="">Library</a>
+                        <a href="">learning</a>
+                        <a href="">Archieve</a>
+                      </nav>
+                    </div>
+                  </a>
+                  <a href=""> U19</a>
+                  <a href=""> U18</a>
+                  <a href=""> <b>Equipe Pro F</b></a>
+                  <a href="">U21</a>
+                  <a href=""> U19</a>
+                  <a href=""> U18</a>
+                  <a href=""> <b>Academie</b></a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Fichier
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Enregistrer</a>
+                  <a href="">Exporter</a>
+                  <a href="">Importer</a>
+                  <a href="">Impression</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Outils
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Noter</a>
+                  <a href="">E-learning</a>
+                  <a href="">Preparation Line</a>
+                  <a href="">Montage Vide</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Favoris
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Videos Joueurs equipes pro</a>
+                  <a href="">Effectif equipe pro</a>
+                  <a href="">Archive Adversaire</a>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link"
+                >Historique
+                <p><i class="fas fa-caret-down"></i></p>
+              </a>
+              <div class="mob-nav-sub-menu-dropdown">
+                <nav>
+                  <a href="">Fiche detailee Alban Lafont</a>
+                  <a href="">Video entrainemnet seance de tris 15/05/2022</a>
+                  <a href="">Video entrainemnet defense de tris 15/05/2022</a>
+                  <a href=""
+                    >Video entrainemnet PSG vs NANTES de tris 10/05/2022</a
+                  >
+                  <a href=""
+                    >Video entrainemnet coup de pieds arretes PSG vs NANTES
+                    10/05/2022</a
+                  >
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="mob-nav-sub-menu-link" href="./fomre.html"
+                >Espace Player
+              </a>
+            </span>
+          </nav>
+          <nav class="mobile-header-social-media">
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+            <a href=""> <i class="fab fa-linkedin-in"></i></a>
+            <a href=""> <i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="header-site-logo">
+          <a href="./index.html">
+            <img src="./images/site logo.png" alt=""
+          /></a>
+        </div>
+        <div class="header-nav">
+          <nav class="header-menu">
+            <span class="nav-sub-menu-link">
+              <a class="nav-links">Equipes </a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <i class="fas fa-user"></i>
+                      <p>
+                        <b>Equipe Pro</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown nav-sub-sub-menu-link">
+                    <div class="nav-sub-sub-menu-dropdown">
+                      <nav>
+                        <a href="">Effectif</a>
+                        <a href="">Library</a>
+                        <a href="">learning</a>
+                        <a href="">Archieve</a>
+                      </nav>
+                    </div>
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U21</p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U19</p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U18</p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-user"></i>
+                      <p>
+                        <b>Equipe Pro F</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U21</p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U19</p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-futbol"></i>
+                      <p>U18</p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links"
+                      ><i class="fas fa-game-board"></i>
+                      <p>
+                        <b>Academie</b>
+                      </p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </span>
+
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Fichier</a>
+              <!--  -->
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a class="nav-sub-links">
+                      <p>
+                        <b>Enregistrer</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Exporter</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Importer</b></p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Impression</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <!--  -->
+            </span>
+
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">outils</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Noter</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>E-learning</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Preparation Line</b></p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Montage vide</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </span>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Favoris</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Videos Joueurs equipes pro</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Effectif equipe pro</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Archive Adversaire</b></p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </span>
+            <span class="nav-sub-menu-link nav-sub-menu-link-style-2">
+              <a class="nav-links">Historique</a>
+              <div class="nav-sub-menu-dropdown">
+                <nav class="header-sub-menu">
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Fiche detailee Alban Lafont</b>
+                      </p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p><b>Video entrainemnet seance de tris 15/05/2022</b></p>
+                    </a>
+                  </div>
+
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b>Video entrainemnet defense de tris 15/05/2022</b>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b
+                          >Video entrainemnet PSG vs NANTES de tris
+                          10/05/2022</b
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hover-dropdown">
+                    <a href="" class="nav-sub-links">
+                      <p>
+                        <b
+                          >Video entrainemnet coup de pieds arretes PSG vs
+                          NANTES 10/05/2022</b
+                        >
+                      </p>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </span>
+            <span>
+              <a class="nav-links" href="./fomre.html">Espace Player</a>
+            </span>
+          </nav>
+        </div>
+        <div class="header-search-bar">
+          <input type="text" placeholder="Search" />
+          <span> <i class="fas fa-search"></i></span>
+        </div>
+        <div class="header-user">
+          <a href="">
+            <i class="far fa-user"></i>
+          </a>
+        </div>
+        <div class="header-social-media">
+          <div>
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+            <a href=""> <i class="fab fa-linkedin-in"></i></a>
+            <a href=""> <i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <div class="site-logo">
+        <a href="../index.html"><img src="../images/site logo.png" alt="" /></a>
+      </div>
+      <div class="social-media-links">
+        <a href=""> <i class="fab fa-facebook-f"></i></a>
+        <a href=""> <i class="fab fa-linkedin-in"></i></a>
+        <a href=""> <i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="setting">
+        <a href=""> <i class="far fa-cog"></i></a>
+      </div>
+    </section>
+    <!-- Side Button -->
+    <div class="side-button">
+      <a href="">
+        <img src="../images/play.png" alt="" />
+      </a>
+    </div>
+
+    <main>
+      <!-- Content Section -->
+      <section class="content-section">
+        <div class="background-image-overlay">
+          <img src="../images/irfan afsar2.png" alt="" />
+        </div>
+
+        <div class="content-card-container">
+          <div class="time">
+            <div>
+              <i class="fas fa-calendar-alt"></i> <span>23.12.2023</span>
+            </div>
+            <div>
+              <i class="fas fa-clock"></i>
+              <span>06.10.57</span>
+            </div>
+          </div>
+          <h1>Library</h1>
+          <!-- ------------------Videos Matches-------------------- -->
+          <div class="content-card-container-flexbox-library-video">
+            <div class="content-card-container-flexbox-library-video-left">
+              <div
+                class="content-card-container-flexbox-library-video-left-switches"
+              >
+                <ul>
+                  <li>
+                    <a href="./videosjoueurs.html">
+                      <div><img src="../images/joueurs.png" alt="" /></div>
+
+                      <span>Video Joueurs</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./videosmatches.html" class="library-menu-select">
+                      <div>
+                        <img src="../images/matces.png" alt="" />
+                      </div>
+
+                      <span>Videos Matches</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./videosentertainment.html">
+                      <div>
+                        <img src="../images/entertainment.png" alt="" />
+                      </div>
+
+                      <span> videos entertrainement</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./adversaire.html">
+                      <div>
+                        <img src="../images/adversaire.png" alt="" />
+                      </div>
+
+                      <span>adversaire</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-card-container-flexbox-library-video-right">
+              <div class="content-card-container-flexbox-matches">
+                <!-- 1 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 1 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 1 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 1 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 1 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a href="">
+                  <div class="videos-matches-card">
+                    <div>
+                      <iframe
+                        src="https://www.youtube.com/embed/CzOQjiHG9q4"
+                        title="Cristiano Ronaldo - 1 Minute Of Skills 2017 | HD"
+                        frameborder="0"
+                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <h3>Olympiakos FC - FC Nantes: le resume</h3>
+                    <span>16k vues il ya 1 mois</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
