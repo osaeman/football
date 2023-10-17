@@ -57,6 +57,9 @@
     font-size: 1.7rem;
     text-transform: capitalize;
   }
+  .side-button img {
+    width: 80px;
+  }
   .nav-sub-menu-link-style-2:hover .nav-links {
     color: var(--fourth-color);
   }
@@ -106,6 +109,19 @@
   .content-card-container-flexbox-right h2 {
     font-size: 3.6rem;
     line-height: 40px;
+  }
+  .content-card-container-flexbox-learning {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .content-card-container-flexbox-learning-left {
+    grid-column: 1 / span 3;
+    padding-bottom: 15px;
+  }
+  .content-card-container-flexbox-learning-right {
+    grid-column: 4 / span 8;
+  }
+  .content-card-container-flexbox-all-content table thead tr th {
+    font-size: 2.3rem;
   }
 }
 
@@ -266,6 +282,34 @@
   .entertainment-card {
     width: 100% !important;
   }
+  .content-card-container-flexbox-learning {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-card-container-flexbox-learning-left {
+    grid-column: 1;
+    padding-bottom: 15px;
+  }
+  .content-card-container-flexbox-learning-right {
+    grid-column: 1;
+  }
+  .content-card-container-flexbox-learning-left-switches > ul > li {
+    margin: 1px 0;
+  }
+  .content-card-container-flexbox-learning-left-switches > ul {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  .content-card-container-flexbox-learning-left-switches h3 {
+    margin: 60px 15px 10px 30px;
+  }
+  .content-card-container-flexbox-learning-right .a {
+    margin-top: 10px;
+    height: 400px;
+  }
+  .content-card-container-flexbox-all-content table thead tr th {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 786px) {
   .content-section {
@@ -320,6 +364,9 @@
   }
   .header-user i {
     font-size: 2.1rem;
+  }
+  .side-button img {
+    width: 70px;
   }
   .content-card-container h1 {
     font-size: 3.2rem;
@@ -389,9 +436,59 @@
     flex-wrap: wrap;
     column-gap: 50px;
   }
+  .content-card-container-flexbox-collectif-folders {
+    margin-bottom: 40px;
+  }
+  .content-card-container-flexbox-collectif-folders h3 {
+    font-size: 1.6rem;
+  }
+  .content-card-container-flexbox-collectif-folders img {
+    width: 80px;
+    margin: 0 auto 10px auto;
+  }
+  .content-card-container-flexbox-learning-left-switches h3 {
+    font-size: 2rem;
+  }
+  .content-card-container-flexbox-learning-left-switches h3 i {
+    font-size: 2rem;
+  }
+
+  .content-card-container-flexbox-learning-left-switches > ul > li > a {
+    font-size: 1.7rem;
+  }
+  .content-card-container-flexbox-learning-left-switches > ul > li div ul li {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .content-card-container-flexbox-all-content table thead tr th {
+    font-size: 1.9rem;
+  }
 }
 
 @media (max-width: 576px) {
+  .header-user-dropdown .header-user-btn-2 {
+    left: -20px;
+    padding: 12px 19px 22px 19px;
+  }
+
+  .header-user-dropdown img {
+    width: 100px;
+    height: 100px;
+  }
+  .header-user-dropdown h2 {
+    font-size: 2.3rem;
+  }
+
+  .header-user-dropdown ul li {
+    font-size: 1.5rem;
+  }
+
+  .header-user-copyright {
+    font-size: 0.8rem;
+  }
+  .side-button img {
+    width: 60px;
+  }
   .content-card-container-flexbox {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -499,5 +596,52 @@
   }
   .entertainment-switch-buttons span {
     font-size: 1.6rem;
+  }
+  .content-card-container-flexbox-collectif {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-card-container-flexbox-all-content table thead tr th {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .content-card-container-flexbox-all-content table tbody tr td span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 15px 6px 0;
+    font-size: 1.3rem;
+    font-family: 800;
+    text-align: center;
+  }
+
+  .content-card-container-flexbox-all-content
+    table
+    tbody
+    tr
+    td:first-child
+    img {
+    width: 50px;
+    height: 33px;
+    border-radius: 6px;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+  .content-card-container-flexbox-all-content
+    table
+    tbody
+    tr
+    td:nth-child(2)
+    img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+  .content-card-container-flexbox-all-content table tbody tr td:last-child img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0;
+    margin-bottom: 6px;
   }
 }

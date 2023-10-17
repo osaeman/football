@@ -91,3 +91,23 @@ navSubMenuLink.forEach((item, index) => {
     }
   });
 });
+
+// Sliding Of Header User Section
+const header_user_btn = document.querySelectorAll(".header-user");
+const header_user_dropdown = document.querySelector(".header-user-dropdown");
+
+header_user_btn.forEach((item) => {
+  item.addEventListener("click", () => {
+    header_user_dropdown.classList.toggle("header-user-dropdown-slidein");
+    console.log("oama");
+  });
+});
+
+// Sliding Of Setting Section
+const setting_btn = document.querySelector(".setting-btn");
+const setting_slider = document.querySelector(".setting-slider");
+const setting = document.querySelector(".setting");
+setting_btn.addEventListener("click", () => {
+  setting_slider.classList.toggle("setting-slider-slide");
+  setting.classList.toggle("setting-bg");
+});
