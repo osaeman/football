@@ -154,18 +154,16 @@
   }
   .content-card-container-flexbox-middle {
     grid-column: 2 / span 1;
-    height: 100%;
-    margin: auto 0;
   }
-  .content-card-container-flexbox-middle img {
-    width: 85%;
+  .human-body svg {
+    height: 350px;
   }
   .content-card-container-flexbox-right {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
   }
-  .content-card-container-flexbox-right div {
-    height: 70%;
+  .content-card-container-flexbox-right > div {
+    height: 350px;
     margin: 0 20px;
   }
 
@@ -310,7 +308,40 @@
   .content-card-container-flexbox-all-content table thead tr th {
     font-size: 2.2rem;
   }
+  .content-card-container-flexbox-notes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-card-container-flexbox-notes-left {
+    grid-column: 1;
+  }
+  .notes-card-container {
+    height: 300px;
+  }
+
+  .content-card-container-flexbox-notes-right {
+    grid-column: 1;
+  }
+  .content-card-container-flexbox-notes-right-content {
+    height: 330px;
+  }
+  .content-card-container-flexbox-notes-right {
+    border-bottom-left-radius: 10px;
+  }
+  .notes-card-type-1 {
+    width: 130px;
+    height: 150px;
+  }
+
+  .notes-card-type-2 {
+    width: 130px;
+    height: 150px;
+  }
+  .add-more-notes {
+    width: 130px;
+    height: 150px;
+  }
 }
+
 @media (max-width: 786px) {
   .content-section {
     width: 100%;
@@ -371,10 +402,18 @@
   .content-card-container h1 {
     font-size: 3.2rem;
     line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
   }
   .content-card-container-flexbox-right h2 {
     font-size: 3rem;
     line-height: 40px;
+  }
+  .content-card-container-forme h1 {
+    margin-bottom: 30px;
+  }
+  .content-card-container-forme-h1 {
+    margin-bottom: 50px !important;
   }
   /* Videos Match Page */
   .content-card-container-flexbox-matches {
@@ -463,6 +502,17 @@
   .content-card-container-flexbox-all-content table thead tr th {
     font-size: 1.9rem;
   }
+  .notes-content-left-arrow i {
+    left: 42px;
+    font-size: 2.2rem;
+  }
+  .notes-content-right-arrow i {
+    right: 42px;
+    font-size: 2.4rem;
+  }
+  .modal-content {
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -512,23 +562,25 @@
   .content-card-container-flexbox-middle {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
-  .content-card-container-flexbox-middle img {
-    width: 60%;
-    margin: 10px auto;
-  }
+
   .content-card-container-flexbox-right {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
+    margin-bottom: 30px;
+  }
+  .content-card-container-flexbox-right > div {
     height: 300px;
   }
-  .content-card-container-flexbox-right p {
-    color: var(--grey-color);
-    padding: 13px 13px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    line-height: 22px;
+
+  .content-card-container-flexbox-right div .body-part-des p {
+    font-size: 1.3rem;
+    line-height: 20px;
     font-weight: 400;
+    margin-bottom: 8px;
   }
   /* -------Forme Du Moment page------- */
   .content-card-container-flexbox-forme {
@@ -643,5 +695,48 @@
     height: 25px;
     margin-right: 0;
     margin-bottom: 6px;
+  }
+  .notes-date-bar p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--fourth-color);
+  }
+  .notes-card-type-1 {
+    width: 110px;
+    height: 130px;
+  }
+
+  .notes-card-type-2 {
+    width: 110px;
+    height: 130px;
+  }
+  .add-more-notes {
+    width: 110px;
+    height: 130px;
+  }
+  .notes-card-container {
+    row-gap: 20px;
+    column-gap: 15px;
+  }
+  .notes-card-type-1 div i,
+  .notes-card-type-2 div i {
+    font-size: 1.1rem;
+  }
+  .notes-card-type-1 .note-date {
+    font-size: 1rem;
+  }
+  .content-card-container-flexbox-notes-right-content h2 {
+    font-size: 2.2rem;
+  }
+  .content-card-container-flexbox-notes-right-content b {
+    margin: 20px 0 10px 0;
+    font-size: 0.9rem;
+  }
+  .notes-content-left-arrow i {
+    left: 30px;
+  }
+  .notes-content-right-arrow i {
+    right: 30px;
   }
 }
