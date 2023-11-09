@@ -739,4 +739,14 @@
   .notes-content-right-arrow i {
     right: 30px;
   }
+  .popup-container {
+    width: 320px;
+  }
+  .popup-card h2 {
+    font-size: 20px;
+  }
+  #close-popup {
+    padding: 4px 8px;
+    font-size: 16px;
+  }
 }

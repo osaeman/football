@@ -828,7 +828,7 @@ header .header-container span .nav-links {
 }
 
 .popup-card {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   text-align: center;
   position: relative;
 }
@@ -844,7 +844,6 @@ header .header-container span .nav-links {
 }
 .popup-card div button {
   outline: none;
-  background-color: var(--seconday-color);
   border: none;
   padding: 13px 20px;
   color: var(--fourth-color);
@@ -853,9 +852,17 @@ header .header-container span .nav-links {
   margin: 0 15px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
 }
 .popup-card div button:hover {
   background-color: var(--third-color);
+}
+
+.blesure-btn {
+  background-color: #a80000;
+}
+.douleur-btn {
+  background-color: orange;
 }
 #close-popup {
   position: absolute;
